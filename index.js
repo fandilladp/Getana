@@ -50,7 +50,7 @@ setInterval(() => {
       latitude_Disaster = coordinates[0];
       longitude_Disaster = coordinates[1];
       const locationSetDisaster = {
-        Disaster1: {
+        "Disaster1": {
           latitude: latitude_Disaster,
           longitude: longitude_Disaster,
         },
@@ -103,7 +103,7 @@ app.post("/user", (req, res) => {
               (err, locations) => {
                 if (err) console.error(err);
                 else {
-                  res.send(locations[0]);
+                  // res.send(locations[0]);
                 }
               }
             );
